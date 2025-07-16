@@ -1,6 +1,7 @@
 import {Link, withRouter} from 'react-router-dom'
 
 import SearchMoviesContext from '../../context/SearchMoviesContext'
+
 import './index.css'
 
 const NavBar = props => {
@@ -11,7 +12,6 @@ const NavBar = props => {
           onTriggerSearchingQuery,
           onChangeSearchInput,
           searchInput,
-          apiStatus,
         } = value
 
         const onChangeHandler = event => onChangeSearchInput(event.target.value)
