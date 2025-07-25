@@ -1,0 +1,83 @@
+/* Container styling */
+.single-movie {
+  padding: 20px;
+  color: #fff;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Movie title */
+.single-movie h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1e1e1e;
+}
+
+/* Movie poster */
+.single-movie img {
+  width: 300px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Movie info paragraphs */
+.single-movie p {
+  margin: 5px 0;
+  color: #1e1e1e;
+}
+
+/* Cast section heading */
+.single-movie h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Cast grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+/* Cast card styling */
+.grid div {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Cast images */
+.grid img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Cast names */
+.grid p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.single-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.single-movie-details-section {
+  margin-left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .single-section {
+    flex-direction: row;
+  }
+
+  .single-movie-details-section {
+    margin-left: 30px;
+  }
+}
